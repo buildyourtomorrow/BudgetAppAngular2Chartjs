@@ -1,0 +1,74 @@
+<byt-nav></byt-nav>
+<br>
+<section class="container">	
+	<section class="col-md-6 col-md-offset-3 byt_background">
+		<section class="row byt_intro">
+			<a id="byt-left-arrow" routerLink="../byt-edu-credit-card-9" class="glyphicon glyphicon-arrow-left"></a>
+			<!-- <a id="byt-right-arrow" routerLink="../byt-edu-credit-card-10" class="pull-right glyphicon glyphicon-arrow-right"></a> -->
+			<section class="byt_question row">
+				Your credit card account will be in default if
+			</section>
+			<section *ngIf="AnswerChoice1" class="byt_gif_1 row">
+				<iframe style="margin-left: 0px" src="https://giphy.com/embed/l0OXWXUHdp4K9nitq" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 40px; margin-bottom: 0px">
+					Yes, but no.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice2" class="byt_gif_2 row">
+				<iframe src="https://giphy.com/embed/l0HlP8UutaaPsauFa" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">
+					No, no, no.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice3" class="byt_gif_3 row">
+				<iframe src="https://giphy.com/embed/EaxciIRvOziSY" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">
+					Nope, keep reading.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice4" class="byt_gif_4 row">
+				<iframe style="margin-left: 0px" src="https://giphy.com/embed/3otPoumTG9VHMQlIPu" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-success" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">					
+					Indeed. The reality is that your bank may place your credit card account in default even if you have been paying the minimum balance on or before the account due date.
+				</section>
+			</section>
+
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_1">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar1" (click)="SomeFunction1()">
+				</section>
+				<section class="byt_potential_answer_text_1">
+					You do not pay at least the minimum payment when due.
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_2">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar2" (click)="SomeFunction2()">
+				</section>
+				<section class="byt_potential_answer_text_2">
+					You exceed your credit limit.	
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_3">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar3" (click)="SomeFunction3()">
+				</section>
+				<section class="byt_potential_answer_text_3">
+					The bank believes that you may be unwilling or unable to pay your debts on time; you file for bankruptcy; or you become incapacitated or die.
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_4">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar4" (click)="SomeFunction4()">
+				</section>
+				<section class="byt_potential_answer_text_4">
+					All of the above.
+				</section>
+			</section>
+			<br>
+			<button (click)="submitAnswerFunc()" class="btn btn-default btn-lg byt_intro_message_button pull-right">Submit</button>
+		</section>
+		<br>		
+	</section>
+</section>
+<byt-direct-link></byt-direct-link>

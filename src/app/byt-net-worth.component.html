@@ -1,0 +1,30 @@
+<section class="row">
+	<section class="table-responsive">
+		<section class="net_worth">
+			<table class="table borderless">	
+				<tbody>
+					<tr>
+						<td class="byt-text">Total assets</td>
+						<td class="byt-data">{{totalAssets|number:'.0-0'}}</td>
+					</tr>
+					<tr>
+						<td class="byt-text">+/-</td>
+						<td *ngIf="(totalIncome - totalBills - totalExpenses) > 0" style="color: #32CD32" class="byt-data">{{ (totalIncome - totalBills - totalExpenses) |number:'.0-0'}}</td>
+						<td *ngIf="(totalIncome - totalBills - totalExpenses) === 0" class="byt-data">{{ (totalIncome - totalBills - totalExpenses) |number:'.0-0'}}</td>
+						<td *ngIf="(totalIncome - totalBills - totalExpenses) < 0" style="color: red" class="byt-data">{{ (totalIncome - totalBills - totalExpenses) |number:'.0-0'}}</td>		
+					</tr>
+					<tr>
+						<td class="byt-text">Total liabilities</td>
+						<td class="byt-data">{{totalLiabilities|number:'.0-0'}}</td>
+					</tr>
+					<tr>
+						<td class="byt-text">Net worth</td>
+						<td style="color: #32CD32" *ngIf="((totalAssets  + (totalIncome - totalBills - totalExpenses) ) - totalLiabilities) > 0" class="byt-data">{{ ((totalAssets  + (totalIncome - totalBills - totalExpenses) ) - totalLiabilities) | number:'.0-0' }}</td>
+						<td *ngIf="((totalAssets  + (totalIncome - totalBills - totalExpenses) ) - totalLiabilities) === 0" class="byt-data">{{ ((totalAssets  + (totalIncome - totalBills - totalExpenses) ) - totalLiabilities) | number:'.0-0' }}</td>
+						<td style="color: red" *ngIf="((totalAssets  + (totalIncome - totalBills - totalExpenses) ) - totalLiabilities) < 0" class="byt-data">{{ ((totalAssets  + (totalIncome - totalBills - totalExpenses) ) - totalLiabilities) | number:'.0-0' }}</td>
+					</tr>	
+				</tbody>
+			</table>
+		</section>
+	</section>								
+</section>

@@ -1,0 +1,25 @@
+.panel {
+	margin-bottom: 5px !important;
+	color: #919496;
+}
+.main_content {
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	font-family: sans-serif; 
+	color: #919496;
+}
+.bills {
+	background-color: #FFFFFF;
+	margin-top: 8px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.bills table tr td {
+	font-size: 14px;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	height: 55px;
+}

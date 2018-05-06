@@ -1,0 +1,75 @@
+<byt-nav></byt-nav>
+<br>
+<section class="container">	
+	<section class="col-md-6 col-md-offset-3 byt_background">
+		<section class="row byt_intro">
+			<a id="byt-left-arrow" routerLink="../byt-edu-stocks-5" class="glyphicon glyphicon-arrow-left"></a>
+			<a id="byt-right-arrow" routerLink="../byt-edu-stocks-7" class="pull-right glyphicon glyphicon-arrow-right"></a>
+			<section class="byt_question row">
+				What ratio can best give an investor a sense of value? In other words, what ratio can an investor calculate and analyze in order to understand if a stock is cheap or expensive?
+			</section>
+			<section *ngIf="AnswerChoice1" class="byt_gif_1 row">
+				<iframe style="margin-left: 0px" src="https://giphy.com/embed/l0OXWXUHdp4K9nitq" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 40px; margin-bottom: 0px">
+					Nope. An initial public offering is generally not a measure of value. An IPO takes place when a company wants to sell shares to the public in order to raise capital for expansion or in order for insiders to gain liquidity.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice2" class="byt_gif_2 row">
+				<iframe src="https://giphy.com/embed/3otPoumTG9VHMQlIPu" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-success" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">
+					Hallelujah!!!! You are correct :) The price to earnings ratio is a measure of value as it give investors a sense of how expensive or cheap a company's earnings (profits) are.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice3" class="byt_gif_3 row">
+				<iframe src="https://giphy.com/embed/l0HlP8UutaaPsauFa" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">
+					Nah. Price per share is a calculation but it is not a measure of value.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice4" class="byt_gif_4 row">
+				<iframe style="margin-left: 0px" src="https://giphy.com/embed/EaxciIRvOziSY" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">					
+					No cigar. Debt to equity is a calculation but it gives investors a sense of a company's capital structure as opposed to a sense of value.
+				</section>
+			</section>
+
+
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_1">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar1" (click)="SomeFunction1()">
+				</section>
+				<section class="byt_potential_answer_text_1">
+					Initial public offering (IPO)
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_2">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar2" (click)="SomeFunction2()">
+				</section>
+				<section class="byt_potential_answer_text_2">
+					Price to earnings
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_3">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar3" (click)="SomeFunction3()">
+				</section>
+				<section class="byt_potential_answer_text_3">
+					Price per share
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_4">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar4" (click)="SomeFunction4()">
+				</section>
+				<section class="byt_potential_answer_text_4">
+					Debt to equity
+				</section>
+			</section>
+			<br>
+			<button (click)="submitAnswerFunc()" class="btn btn-default btn-lg byt_intro_message_button pull-right">Submit</button>
+		</section>
+		<br>		
+	</section>
+</section>
+<byt-direct-link></byt-direct-link>

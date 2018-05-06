@@ -1,0 +1,47 @@
+.main_content {
+	animation-delay: 10s;
+	animation: colorchange 100s; /* animation-name followed by duration in seconds*/
+	background-color: #419df4;
+	border-radius: 5px;
+	font-family: sans-serif; 
+	color: #919496;
+}
+@keyframes colorchange
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1d6b22;}
+  30%  {background: #41f4ac;}
+  40%  {background: #41f4ee;}
+  50%  {background: #41c7f4;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1d6b22;}
+  30%  {background: #41f4ac;}
+  40%  {background: #41f4ee;}
+  50%  {background: #41c7f4;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+h3{
+  color: #fff; 
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  opacity: 0.5;
+}
+.byt_progress{
+  margin-bottom: 0px;
+}

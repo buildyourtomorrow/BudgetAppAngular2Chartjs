@@ -1,0 +1,81 @@
+<section class="row">
+	<section class="incomeProjection">
+		<section *ngIf="allIncomeProjectionsLength > 0">
+			<section>
+				<section>
+					<section *ngFor="let incomeProjection of allIncomeProjections; let i=index">						
+						<section class="btn btn-info" style="padding:13px; width: 100%;">
+							<!--
+							<section style="width:20%; float:left; text-align:center; display:inline">{{incomeProjection.date | date:'MM/dd'}}</section>
+							-->
+							<section style="width:40%; float:left; text-align:center; display:inline">{{incomeProjection.category}}</section>
+							<section style="width:40%; float:left; text-align:center; display:inline">{{incomeProjection.amount | number:'.0-0'}}
+							</section>
+							<section role="button" style="width:20%; float:right; text-align:center; display:inline" (click)="removeIncomeProjection(i)"><i class="glyphicon glyphicon-remove"></i></section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+    </section>
+</section>
+<section [hidden]="submitted"> <!-- novalidate disables brower validation -->
+	<form (ngSubmit)="submitIncome()" #incomeForm="ngForm" novalidate>
+		<section class="form-group">
+			<label for="category">Category</label>
+			<select id="category" class="form-control" [(ngModel)]="model.category" name="category" #category="ngModel" required>
+				<option value="" disabled selected>Please choose</option>
+				<option *ngFor="let category of categories" [value]="category.name">{{category.name}}</option>
+			</select>
+			<section [hidden]="category.valid" class="alert alert-danger">Category is required</section>
+		</section>
+		<!--
+			<section class="form-group">
+	        	<label for="description">Description</label>
+	        	<input type="text" id="description" [disabled]="!category.valid" class="form-control" [(ngModel)]="model.description" name="description" placeholder='Cash from stripping' #description="ngModel">
+	      	</section>
+      	-->
+		<section class="form-group">
+        	<label for="amount">Amount</label>
+        	<input type="number" id="amount" [disabled]="!category.valid" class="form-control" [(ngModel)]="model.amount" name="amount" placeholder='1700' #amount="ngModel" required>
+        	<section [hidden]="amount.valid" class="alert alert-danger">Amount is required</section>
+      	</section>
+      	<!--
+      	<section class="form-group">
+        	<label for="date">Date</label>
+        	<input type="date" id="date" [disabled]="!category.valid || !amount.valid" class="form-control" [(ngModel)]="model.date" name="date" #date="ngModel">
+      	</section>
+      	-->
+		<section class="form-group">
+			<button type="submit" [disabled]="!incomeForm.form.valid" class="btn btn-default btn-block btn-lg">Add Income Projection</button>
+		</section>		
+	</form>
+	<br>
+</section>
+<section [hidden]="!submitted" class="make_white">
+	<h4>Looks good?</h4>
+	<section class="row">
+		<section class="col-xs-3">Category</section>
+		<section class="col-xs-9  pull-left">{{ model.category }}</section>
+	</section>
+	<!--
+	<section class="row">
+		<section class="col-xs-3">Description</section>
+		<section class="col-xs-9 pull-left">{{ model.description }}</section>
+	</section>
+	-->
+	<section class="row">
+		<section class="col-xs-3">Amount</section>
+		<section class="col-xs-9 pull-left">{{ model.amount }}</section>
+	</section>
+	<!--
+	<section class="row">
+		<section class="col-xs-3">Date</section>
+		<section class="col-xs-9 pull-left">{{ model.date }}</section>
+	</section>
+	-->
+	<br>
+	<button class="btn btn-default btn-block btn-lg" (click)="submitted=false">Edit</button>
+	<button class="btn btn-default btn-block btn-lg" (click)="submitIncomeFinal()">Done</button>
+	<br>
+</section>

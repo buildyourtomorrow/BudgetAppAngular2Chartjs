@@ -1,0 +1,77 @@
+<section class="navbar navbar-default navbar-static-top">
+	<section class="container">
+		<section class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#byt_example">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a routerLink="../app-menu" class="navbar-brand" style="padding: 6px;">
+				<img src="./assets/JustLogo.png" alt="BYT" class="img-responsive">
+			</a>
+			<byt-go-pro-subscription (paid)="theClientPaid()"></byt-go-pro-subscription>
+		</section>
+		<section class="collapse navbar-collapse" id="byt_example">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a style="padding: 6px !important;" class="byt_nav_class" routerLink="../byt-profile">
+						<section style="line-height: 40px;">Hola {{nickName}}</section>
+					</a>						
+				</li>
+				<li>
+					<a href="" (click)="logout()" style="padding: 6px !important;" class="byt_nav_class">
+						<section style="line-height: 40px;">Sign out</section>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/buildyourtomorrow/" target="_blank" style="padding: 6px !important;" class="byt_nav_class">
+						<section class="fa fa-facebook fa-lg" style="line-height: 40px;"></section>
+					</a>				
+				</li>
+				<li>
+					<a target="_blank" href="https://www.instagram.com/_buildyourtomorrow/" style="padding: 6px !important;" class="byt_nav_class">
+						<section class="fa fa-instagram fa-lg" style="line-height: 40px;"></section>
+					</a>					
+				</li>
+				<li>
+					<a target="_blank" href="https://www.youtube.com/channel/UC4y7a8nzB3W9IWd71FHnOsw" style="padding: 6px !important;" class="byt_nav_class">
+						<section class="fa fa-youtube-play fa-lg" style="line-height: 40px;"></section>
+					</a>					
+				</li>
+				<li>
+					<a target="_blank" href="https://twitter.com/__byt__" style="padding: 6px !important;" class="byt_nav_class">
+						<section class="fa fa-twitter fa-lg" style="line-height: 40px;"></section>
+					</a>					
+				</li>
+				<li>
+					<a target="_blank" href="https://plus.google.com/u/0/114928024069398081431" style="padding: 6px !important;" class="byt_nav_class"s>
+						<section class="fa fa-google-plus fa-lg" style="line-height: 40px;"></section>
+					</a>					
+				</li>			
+			</ul>
+		</section>
+		<!--
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a ui-sref="home" style="padding: 6px;">
+					<img src="/app/images/logo.png" alt="BYT" class="img-responsive">
+				</a>
+			</li>
+			<li>
+				<a style="padding: 6px !important;">
+					<section style="line-height: 40px;">
+						Hola {{nickName}}
+					</section>
+				</a>						
+			</li>
+			<li>
+				<a href="" (click)="logout()" style="padding: 6px !important;">
+					<section style="line-height: 40px;">
+						Sign out
+					</section>
+				</a>					
+			</li>
+		</ul>
+		-->
+	</section>
+</section>

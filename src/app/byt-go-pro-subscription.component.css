@@ -1,0 +1,42 @@
+.byt-go-pro-subscription {
+	animation-delay: 10s;
+	animation: colorchange 100s; 
+  /* animation-name followed by duration in seconds */
+	/* you could also use milliseconds (ms) or something like 2.5s */
+	-webkit-animation: colorchange 100s; /* Chrome and Safari */
+	background: #419df4;
+	border-radius: 5px;
+	font-family: sans-serif;
+	color: #fff;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+@keyframes colorchange
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1aaab2;}
+  30%  {background: #ff0202;}
+  40%  {background: #f47e00;}
+  50%  {background: #37acd3;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1aaab2;}
+  30%  {background: #ff0202;}
+  40%  {background: #f47e00;}
+  50%  {background: #37acd3;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}

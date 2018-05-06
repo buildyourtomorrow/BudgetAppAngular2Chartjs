@@ -1,0 +1,31 @@
+.net_worth {
+	background-color: #FFFFFF;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	border-radius: 5px;
+	color: #919496;
+}
+.byt-text {
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle !important;
+	color: #919496;
+	width: 50%;
+	height: 60px;
+}
+.byt-data {
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle !important;
+	color: #919496;
+}
+table td {
+    border-top: none !important;    
+}
+@media screen and (max-width: 767px) {
+	.table-responsive {
+		border: none !important;
+	}
+}

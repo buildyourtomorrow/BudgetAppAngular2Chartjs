@@ -1,0 +1,29 @@
+<section class="row">
+	<section class="monthly_projections_nav">
+		<a id="byt-left-arrow" routerLink="../budget-intro-text-3" class="animated infinite jello glyphicon glyphicon-arrow-left"></a>
+		<a id="byt-right-arrow" routerLink="../budget-explainer-text-1" class="pull-right animated infinite jello glyphicon glyphicon-arrow-right"></a>
+		<ul>
+			<li role="presentation" class="monthly_projections_nav_second" (click)="addRemoveSpinnerOne()">
+				<a routerLink="income" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner_one" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner_one"></i></span>
+					Income
+				</a>									
+			</li>
+			<li role="presentation" class="monthly_projections_nav_third" (click)="addRemoveSpinnerTwo()">
+				<a routerLink="bills" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner_two" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner_two"></i></span>
+					Bills
+				</a>									
+			</li>
+			<li role="presentation" class="monthly_projections_nav_forth" (click)="addRemoveSpinnerThree()">
+				<a routerLink="expenses" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner_three" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner_three"></i></span>
+					Expenses
+				</a>									
+			</li>
+		</ul>	
+	</section>
+</section>

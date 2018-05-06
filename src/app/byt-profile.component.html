@@ -1,0 +1,35 @@
+<byt-nav></byt-nav>
+<br>
+<section class="container">
+	<section class="col-md-6 col-md-offset-3 byt_background">		
+		<section class="row byt_intro">
+			<section class="byt_message">
+				<table>
+					<tr>
+						<td style="padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">Name:</td>
+						<td style="padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">{{nickName}}</td>
+					</tr>
+					<tr *ngIf="byt_paying_customer">
+						<td style="padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">Pro Member:</td>
+						<td style="padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">Yes</td>
+					</tr>				
+					<tr *ngIf="!byt_paying_customer">
+						<td style="padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">Pro Member:</td>
+						<td style="padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">No</td>
+					</tr>						
+				</table>
+				<button style="margin: 10px;" *ngIf="!byt_paying_customer" type="button" class="btn btn-md btn-success byt-go-pro-subscription" (click)="BYTGoPro()">Go Pro - $9/month</button>
+				<button style="margin: 10px;" *ngIf="byt_paying_customer" type="button" class="btn btn-md btn-primary byt-cancel-subscription" (click)="BYTCancelSubscription()">Cancel Subscription</button>
+				<section *ngIf="!byt_paying_customer" class="text-center" style="color:#fff">
+					<h1>Upgrade to Pro and get access to all lessons. Yes!!</h1>
+					<br>
+				</section>
+				<section *ngIf="byt_paying_customer" class="text-center" style="margin: 45px;color:#fff">
+					<h1>You are a Pro member and have access to EVERYTHING!!! And there is much more to come.</h1>
+					<br>
+				</section>
+			</section>
+		</section>
+		<br>
+	</section>	
+</section>

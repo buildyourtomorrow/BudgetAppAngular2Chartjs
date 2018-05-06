@@ -1,0 +1,40 @@
+<byt-last-income-entry></byt-last-income-entry>
+<section class="row">
+	<section class="income">
+		<section class="panel-group" *ngIf="allIncomeLength > 0" id="accordion" role="tablist" aria-multiselectable="true">
+			<section class="panel panel-title">
+				<section class="panel-heading" role="tab" id="headingOne">		
+					<section class="panel-title" style="font-size:14px;">
+						<section role="button" data-toggle="collapse" data-target="#collapse" (click)="byt_active=!byt_active">				
+							<section role="button" *ngIf="byt_active" data-toggle="collapse" data-target="#collapse" class="glyphicon glyphicon-plus"></section>
+							<section role="button" *ngIf="!byt_active" data-toggle="collapse" data-target="#collapse" class="glyphicon glyphicon-minus"></section> 
+							All income
+						</section>
+					</section>
+				</section>
+				<section id="collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<section *ngFor="let income of allIncome | bytOrderByDate; let i=index">
+						<section class="panel-body" style="padding:13px">
+							<section style="width:20%; float:left; text-align:center; display:inline">{{income.date | date:'MM/dd'}}</section>
+							<section style="width:40%; float:left; text-align:center; display:inline">{{income.description}}</section>
+							<section style="width:30%; float:left; text-align:center; display:inline">{{income.amount | number:'1.2-2'}}
+							</section>
+							<section role="button" style="width:10%; float:right; text-align:center; display:inline" (click)="removeIncome(i)"><i class="glyphicon glyphicon-remove"></i></section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section *ngIf="allIncomeLength > 0" class="panel-group">
+			<section *ngFor="let category of incomeCategoryTotals | bytOrderBy">
+				<section class="panel">
+					<section class="panel-heading" *ngIf="category.total > 0">
+						<section class="panel-title" style="font-size: 14px; text-decoration: none; margin: 2px;">{{category.category}} - {{category.total | number:'.0-0'}}</section>	
+					</section>
+				</section>
+			</section>
+		</section>
+    </section>
+</section>
+<byt-income-form (incomeForm)="childIncomeForm($event)"></byt-income-form>
+<br>

@@ -1,0 +1,48 @@
+.navbar-default {
+	background-color: #ffffff !important;
+	border: none !important;
+	margin-bottom: 0px !important;
+}
+.navbar-brand {
+    position: relative;
+    width: 54px;
+    left: 15px;
+    background-size: contain;
+}
+@keyframes colorchangesbyt
+{
+  0%   {color: #f46542;}
+  10%  {color: #b642f4;}
+  20%  {color: #1aaab2;}
+  30%  {color: #ff0202;}
+  40%  {color: #f47e00;}
+  50%  {color: #37acd3;}
+  60%  {color: #4164f4;}
+  70%  {color: #8841f4;}
+  80%  {color: #e541f4;}
+  90%  {color: #f441a3;}
+  100% {color: #419df4;}
+}
+
+@-webkit-keyframes colorchangesbyt /* Safari and Chrome - necessary duplicate */
+{
+  0%   {color: #f46542;}
+  10%  {color: #b642f4;}
+  20%  {color: #1aaab2;}
+  30%  {color: #ff0202;}
+  40%  {color: #f47e00;}
+  50%  {color: #37acd3;}
+  60%  {color: #4164f4;}
+  70%  {color: #8841f4;}
+  80%  {color: #e541f4;}
+  90%  {color: #f441a3;}
+  100% {color: #419df4;}
+}
+.byt_nav_class{
+	animation: colorchangesbyt 100s !important;
+	-webkit-animation: colorchangesbyt 100s !important; /* Chrome and Safari */
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #419df4;
+}

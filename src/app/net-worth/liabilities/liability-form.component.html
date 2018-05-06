@@ -1,0 +1,43 @@
+<section [hidden]="submitted"> <!-- novalidate disables brower validation -->
+	<form (ngSubmit)="submitLiability()" #liabilityForm="ngForm" novalidate>
+		<section class="form-group">
+			<label for="category">Category</label>
+			<select id="category" class="form-control" [(ngModel)]="model.category" name="category" #category="ngModel" required>
+				<option value="" disabled selected>Please choose</option>
+				<option *ngFor="let category of categories" [value]="category.name">{{category.name}}</option>
+			</select>
+			<section [hidden]="category.valid" class="alert alert-danger">Category is required</section>
+		</section>
+		<section class="form-group">
+        	<label for="description">Description</label>
+        	<input type="text" id="description" [disabled]="!category.valid" class="form-control" [(ngModel)]="model.description" name="description" placeholder='Ugly Sallie Mae' #description="ngModel" required>
+        	<section [hidden]="description.valid" class="alert alert-danger">Description is required</section>
+      	</section>
+		<section class="form-group">
+        	<label for="amount">Amount</label>
+        	<input type="number" id="amount" [disabled]="!category.valid || !description.valid" class="form-control" [(ngModel)]="model.amount" name="amount" placeholder='1700' #amount="ngModel" required>
+        	<section [hidden]="amount.valid" class="alert alert-danger">Amount is required</section>
+      	</section>      	
+		<section class="form-group">
+			<button type="submit" [disabled]="!liabilityForm.form.valid" class="btn btn-default btn-block btn-lg">Add Liability</button>
+		</section>
+	</form>
+</section>
+<section [hidden]="!submitted" class="make_white">
+	<h4>Looks good?</h4>
+	<section class="row">
+		<section class="col-xs-3">Category</section>
+		<section class="col-xs-9  pull-left">{{ model.category }}</section>
+	</section>
+	<section class="row">
+		<section class="col-xs-3">Description</section>
+		<section class="col-xs-9 pull-left">{{ model.description }}</section>
+	</section>
+	<section class="row">
+		<section class="col-xs-3">Amount</section>
+		<section class="col-xs-9 pull-left">{{ model.amount }}</section>
+	</section>
+	<br>
+	<button class="btn btn-default btn-block btn-lg" (click)="submitted=false">Edit</button>
+	<button class="btn btn-default btn-block btn-lg" (click)="submitLiabilityFinal()">Done</button>
+</section>

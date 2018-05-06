@@ -1,0 +1,15 @@
+<br>
+<div>
+    <div id="byt-overview-chart" style="display: block">
+        <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+        </canvas>
+    </div>
+</div>
+<br>

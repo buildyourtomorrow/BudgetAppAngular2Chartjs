@@ -1,0 +1,74 @@
+<byt-nav></byt-nav>
+<br>
+<section class="container">
+	<section class="col-md-6 col-md-offset-3 byt_background">
+		<section class="row byt_intro">
+			<a id="byt-left-arrow" routerLink="../byt-edu-credit-card-1" class="glyphicon glyphicon-arrow-left"></a>
+			<a id="byt-right-arrow" routerLink="../byt-edu-credit-card-3" class="pull-right glyphicon glyphicon-arrow-right"></a>
+			<section class="byt_question row">
+				On a credit card account, what are KEY differences between a cash advance and a purchase?
+			</section>
+			<section *ngIf="AnswerChoice1" class="byt_gif_1 row">
+				<iframe src="https://giphy.com/embed/l0OXWXUHdp4K9nitq" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 40px; margin-bottom: 0px">
+					Nope. A purchase and a cash advance accrue different interest rates.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice2" class="byt_gif_2 row">
+				<iframe src="https://giphy.com/embed/EaxciIRvOziSY" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">
+					Nah. The interest rate on a purchase is usually lower than that of a cash advance.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice3" class="byt_gif_3 row">
+				<iframe src="https://giphy.com/embed/l0HlP8UutaaPsauFa" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-danger" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">
+					Close, but no cigar. Cash advances do start to accrue interest on the day of the advance. However, this is not the only difference.
+				</section>
+			</section>
+			<section *ngIf="AnswerChoice4" class="byt_gif_4 row">
+				<iframe src="https://giphy.com/embed/3otPoumTG9VHMQlIPu" width="240" height="120" frameBorder="0" class="giphy-embed"></iframe>
+				<section class="alert alert-success" role="alert" style="margin-right: 48px; margin-left: 12px; margin-bottom: 0px">					
+					Ding, ding, ding. Cash advances are different than purchases in that cash advances carry a transaction fee and an interest rate that starts to accrue ON THE DAY OF the advance. Purchases, on the other hand, don't carry a transaction fee and start to accrue interest if not paid off after the current statement cycle. The interest rate on a cash advance is usually higher than that of a credit card.
+				</section>
+			</section>
+
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_1">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar1" (click)="SomeFunction1()">
+				</section>
+				<section class="byt_potential_answer_text_1">
+					There is no difference since a cash advance and a purchase both accrue interest.
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_2">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar2" (click)="SomeFunction2()">
+				</section>
+				<section class="byt_potential_answer_text_2">
+					A purchase usually carries a higher interest rate relative to a cash advance. 
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_3">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar3" (click)="SomeFunction3()">
+				</section>
+				<section class="byt_potential_answer_text_3">
+					The only big difference is that cash advances start to accrue interest on day one.
+				</section>
+			</section>
+			<section class="row" style="margin-left: 0px;">
+				<section class="byt_potential_answer_4">
+					<input style="cursor:pointer;" type="checkbox" [checked]="SomeVar4" (click)="SomeFunction4()">
+				</section>
+				<section class="byt_potential_answer_text_4">
+					Cash advances normally carry a transaction fee and a higher interest rate relative to purchases. Cash advances also begin to accrue interest on the day of the actual cash withdrawal.
+				</section>
+			</section>
+			<br>
+			<button (click)="submitAnswerFunc()" class="btn btn-default btn-lg byt_intro_message_button pull-right">Submit</button>
+		</section>
+		<br>		
+	</section>
+</section>
+<byt-direct-link></byt-direct-link>

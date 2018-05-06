@@ -1,0 +1,65 @@
+<byt-last-expense-entry></byt-last-expense-entry>
+<section class="row" id="allBillTransactions">
+	<section class="expenses">
+		<section *ngIf="allExpensesLength > 0">
+			<section class="panel panel-info">
+				<section class="panel-heading" role="tab">
+					<section class="panel-title" style="font-size:14px;">
+						<section role="button" data-toggle="collapse" data-target="#collapse" (click)="byt_active=!byt_active">
+							<section role="button" *ngIf="byt_active" data-toggle="collapse" data-target="#collapse" class="glyphicon glyphicon-plus"></section>
+							<section role="button" *ngIf="!byt_active" data-toggle="collapse" data-target="#collapse" class="glyphicon glyphicon-minus"></section> 
+							All expenses
+						</section>
+					</section>
+				</section>
+				<section id="collapse" class="panel-collapse collapse">
+					<section *ngFor="let expense of allExpenses | bytOrderByDate; let i=index">
+						<section class="panel-body" style="padding:13px">
+							<section style="width:20%; float:left; text-align:center; display:inline">{{expense.date | date:'MM/dd'}}</section>
+							<section style="width:40%; float:left; text-align:center; display:inline">{{expense.description}}</section>
+							<section style="width:30%; float:left; text-align:center; display:inline">{{expense.amount | number:'1.2-2'}}
+							</section>
+							<section role="button" style="width:10%; float:right; text-align:center; display:inline" (click)="removeBill(i)">
+								<i class="glyphicon glyphicon-remove"></i>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section id="accordion" *ngFor="let category of expensesCategoryTotals | bytOrderBy; let i=index">
+			<section class="panel panel-info" *ngIf="category.total > 0">
+				<section class="panel-heading" role="tab" id="headingOne">
+					<section class="panel-title" style="font-size:14px;">    									
+						<section role="button" data-toggle="collapse" [attr.data-target]="'#collapse'+i" (click)="expensesCategoryTotals[i].show = !expensesCategoryTotals[i].show">
+							<section role="button" *ngIf="expensesCategoryTotals[i].show" data-toggle="collapse" [attr.data-target]="'#collapse'+i" class="glyphicon glyphicon-plus"></section>
+							<section role="button" *ngIf="!expensesCategoryTotals[i].show" data-toggle="collapse" [attr.data-target]="'#collapse'+i" class="glyphicon glyphicon-minus"></section>
+							{{category.category}} - {{category.total | number:'.0-0'}} {{category.index}}
+						</section>
+					</section>
+				</section>
+				<section [attr.id]="'collapse'+i" class="panel-collapse collapse" role="tabpanel">
+					<section  *ngFor="let subcategory of category.subCategory | bytOrderBy">
+						<section *ngIf="subcategory.total > 0">
+							<section class="panel-body" style="padding:13px">
+								<section style="width:50%; float:left; text-align:center; display:inline">{{subcategory.name}}</section>
+								<section style="width:50%; float:right; text-align:center; display:inline">{{subcategory.total | number:'.0-0'}}</section>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>    							
+		</section>
+    </section>
+</section>
+<section style="display: block; background-color: #fff; border-radius: 5px;" *ngIf="isDataAvailable">
+	<canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">          
+	</canvas>
+</section>
+<byt-expenses-form (expensesForm)="childExpenseForm($event)"></byt-expenses-form>
+<br>

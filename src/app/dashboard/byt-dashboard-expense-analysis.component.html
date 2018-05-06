@@ -1,0 +1,29 @@
+<section class="row">
+	<section class="table-responsive">
+		<section class="dashboard_analysis">
+			<!-- <byt-dashboard-expense-question></byt-dashboard-expense-question> -->
+			<table class="table">	
+				<tbody>
+					<tr>
+						<td class="dashboard_analysis_1">Expenses</td>
+						<td class="dashboard_analysis_2">{{expenseProjectionsTotal|number:'.0-0'}}</td>
+					</tr>	
+					<tr>
+						<td class="dashboard_analysis_1">Total spent</td>
+						<td class="dashboard_analysis_2">{{totalSpent|number:'.0-0'}}</td>
+					</tr>
+					<tr>
+						<td class="dashboard_analysis_1">Leftover</td>
+						<td class="dashboard_analysis_2">{{leftOver|number:'.0-0'}}</td>
+					</tr>
+					<tr>
+						<td class="dashboard_analysis_1">{{specialVarUpByWord}}</td>
+						<td *ngIf="upBy<0" class="dashboard_analysis_2" style="color: #FE7878">{{upBy|number:'.0-0'}} &#9785; &#9763;</td>
+						<td *ngIf="upBy>0" class="dashboard_analysis_2" style="color: #32CD32">{{upBy | number:'.0-0'}} &#9786; &#9734;</td>
+						<td *ngIf="upBy===0" class="dashboard_analysis_2" style="color: #666666">{{upBy | number:'.0-0'}}</td>
+					</tr>			
+				</tbody>
+			</table>
+		</section>
+	</section>
+</section>

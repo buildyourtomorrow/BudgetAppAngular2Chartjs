@@ -1,0 +1,40 @@
+<section class="row">
+	<section class="net_worth_nav">
+		<a id="byt-left-arrow" routerLink="../net-worth-intro-1" class="animated infinite jello glyphicon glyphicon-arrow-left"></a>
+		<!--
+		  <a id="byt-right-arrow" routerLink="../byt-budget-6" class="pull-right animated infinite jello glyphicon glyphicon-arrow-right"></a>
+	    -->
+		<ul>
+			<!--
+			<li role="presentation" class="net_worth_nav_first" (click)="addRemoveSpinner()">
+				<a routerLink="net-worth" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner"></i></span>
+					Net worth
+				</a>									
+			</li>
+			-->
+			<li role="presentation" class="net_worth_nav_second" (click)="addRemoveSpinnerOne()">
+				<a routerLink="assets" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner_one" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner_one"></i></span>
+					Assets
+				</a>									
+			</li>
+			<li role="presentation" class="net_worth_nav_third" (click)="addRemoveSpinnerTwo()">
+				<a routerLink="liabilities" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner_two" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner_two"></i></span>
+					Liabilities
+				</a>									
+			</li>
+			<li role="presentation" class="net_worth_nav_third" (click)="addRemoveSpinnerThree()">
+				<a routerLink="net-worth" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_spinner_three" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_spinner_three"></i></span>
+					Net Worth
+				</a>									
+			</li>
+		</ul>		
+	</section>
+</section>

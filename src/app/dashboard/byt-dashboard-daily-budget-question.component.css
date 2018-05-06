@@ -1,0 +1,292 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.navbar-default {
+	background-color: #ffffff !important;
+	border: none !important;
+	margin-bottom: 0px !important;
+}
+
+.byt_watch_headline {
+	color: #919496;
+	font-size: 18px;
+	font-weight:bold;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.byt_watch_videos {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    padding: 0;
+    border: 0;
+	margin: 0;
+}
+.animate-show {
+  line-height: 20px;
+  opacity: 1;
+  background: #f8f8f8;
+}
+.panel-title {
+	font-size: 14px !important;
+}
+.animate-show.ng-hide-remove {
+  transition: all linear 2s;
+}
+.all-expenses {
+	margin-bottom: 5px !important;
+}
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+}
+.validation_class {
+  background-color: #D0D0D0;
+  border: 1px solid red;
+  padding: .2em;
+}
+.validation_1 {
+	color:red; 
+	margin-bottom: 9px;
+}
+.main_content {
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	font-family: sans-serif; 
+	color: #919496;
+}
+.dashboard_nav {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 20px;
+	padding-right: 1px;
+	padding-bottom: 20px;	
+	padding-left: 1px;
+	border-radius: 5px;
+	line-height: 50px;	
+}
+.dashboard_nav ul {
+	text-align: center; 
+}
+.dashboard_nav ul li{
+	display: inline;	
+	font-size: 14px;	
+}
+.dashboard_nav_first {
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.dashboard_nav_second {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.dashboard_nav_third {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.dashboard_nav_fourth {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.dashboard_nav_fifth {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.dashboard_nav a {
+	color: #919496;
+	font-family: sans-serif; 
+}
+.dashboard_nav a:hover {
+    text-decoration: none;
+}
+.dashboard_nav a:hover {
+	color: #919496;
+}  /* mouse over link */
+.dashboard_nav a:active {
+	color: #919496;
+}  /* selected link */
+
+/* I gave every table data its own class so if I ever want to target that peice of data, I can */
+/* there is lots of repetition but I'm trying to be explicit */
+.dashboard_overview {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.byt_education {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+.dashboard_overview table tbody tr td {
+	font-size: 14px;
+	width: 25%;
+	text-align: center;
+	vertical-align: middle;
+	height: 55px;
+	padding: 1px !important;
+}
+.dashboard_text_analysis_1 {
+	text-align: center; 
+	margin-top: 10px;
+	background-color: #e5f7fb;
+	height: 55px !important;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+.dashboard_analysis {
+	background-color: #FFFFFF;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.dashboard_analysis table tbody tr td {
+	font-size: 14px;
+	width: 50%;
+	text-align: center;	
+	vertical-align: middle;
+	height: 55px;
+}
+.dashboard_analysis_1 {
+    
+}
+.dashboard_analysis_2 {
+	text-align: center;
+	vertical-align: middle !important;
+} 
+.table {
+	margin-bottom: 0px !important;
+}
+.table th, .table td { 
+     border-top: none !important; 
+ }
+ .income {
+	background-color: #FFFFFF;
+	margin-top: 8px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.income table tr td {
+	font-size: 14px;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	height: 55px;
+}
+.income_1 {
+	cursor: pointer;
+}
+.income_2 {
+	cursor: pointer;
+}
+.income_3 {
+}
+.income_4 {
+}
+.bills {
+	background-color: #FFFFFF;
+	margin-top: 8px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.bills table tr td {
+	font-size: 14px;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	height: 55px;
+}
+.bills_1 {
+	cursor: pointer;
+}
+.bills_2 {
+	cursor: pointer;
+}
+.bills_3 {
+}
+.bills_4 {
+}
+.expenses {
+	background-color: #FFFFFF;
+	margin-top: 8px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.expenses table tr td {
+	font-size: 14px;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	height: 55px;
+}
+.expenses_1 {
+	cursor: pointer;
+}
+.expenses_2 {
+	cursor: pointer;
+}
+.expenses_3 {
+}
+.expenses_4 {
+}
+@media screen and (max-width: 767px) {
+	.table-responsive {
+	    width: 100%;
+	    margin-bottom: 0px !important;
+	    overflow-y: hidden;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	    border: 0px solid #ddd !important;
+	}
+}
+@media screen and (max-width: 550px) {
+	.dashboard_nav_first {
+		margin-left: 3px !important;
+		margin-right: 10px !important;
+		font-size: 13px !important;
+	}
+	.dashboard_nav_second {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+		font-size: 13px !important;
+	}
+	.dashboard_nav_third {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+		font-size: 13px !important;
+	}
+	.dashboard_nav_fourth {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+		font-size: 13px !important;
+	}
+	.dashboard_nav_fifth {
+		margin-left: 10px !important;
+		margin-right: 3px !important;
+		font-size: 13px !important;
+	}
+}

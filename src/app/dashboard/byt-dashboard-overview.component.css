@@ -1,0 +1,94 @@
+.main_content {
+	animation-delay: 10s;
+	animation: colorchange 100s; /* animation-name followed by duration in seconds*/
+	background-color: #419df4;
+	border-radius: 5px;
+	font-family: sans-serif; 
+	color: #919496;
+}
+@keyframes colorchange
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1d6b22;}
+  30%  {background: #41f4ac;}
+  40%  {background: #41f4ee;}
+  50%  {background: #41c7f4;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1d6b22;}
+  30%  {background: #41f4ac;}
+  40%  {background: #41f4ee;}
+  50%  {background: #41c7f4;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+/* I gave every table data its own class so if I ever want to target that peice of data, I can */
+/* there is lots of repetition but I'm trying to be explicit */
+.dashboard_overview {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.dashboard_overview table tbody tr td {
+	font-size: 14px;
+	width: 25%;
+	text-align: center;
+	color: #919496;
+	vertical-align: middle;
+	height: 55px;
+	padding: 1px !important;
+}
+.table {
+	margin-bottom: 0px !important;
+}
+.table th, .table td { 
+     border-top: none !important; 
+}
+h1 {
+	margin-top: 0px;
+	-webkit-text-stroke: 1px black;
+	text-align: center;
+	color: white;
+	text-shadow:
+	  3px 3px 0 #000,
+	 -1px -1px 0 #000,  
+	  1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000;
+}
+.glyphicon{
+  font-size:18px;
+  color: #fff;
+}
+#byt-left-arrow{
+  margin-left: 20px;
+  margin-top: 20px; 
+}
+.byt_progress{
+  margin-bottom: 0px;
+}
+ @media screen and (max-width: 767px) {
+ 	.table-responsive {
+ 	    width: 100%;
+ 	    overflow-y: hidden;
+ 	    -ms-overflow-style: -ms-autohiding-scrollbar;
+ 	    border: 0px solid #ddd !important;
+ 	    margin-bottom: 0px;
+ 	}
+}

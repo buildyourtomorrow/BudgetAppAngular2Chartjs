@@ -1,0 +1,227 @@
+.byt_background {
+	animation-delay: 10s;
+	animation: colorchange 100s; /* animation-name followed by duration in seconds*/
+	/* you could also use milliseconds (ms) or something like 2.5s */
+	-webkit-animation: colorchange 100s; /* Chrome and Safari */
+	background-color: #419df4;
+	border-radius: 5px;
+	font-family: sans-serif;
+	color: #419df4;
+  padding-top: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@keyframes colorchange
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1aaab2;}
+  30%  {background: #ff0202;}
+  40%  {background: #f47e00;}
+  50%  {background: #37acd3;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1aaab2;}
+  30%  {background: #ff0202;}
+  40%  {background: #f47e00;}
+  50%  {background: #37acd3;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+.byt_white_background {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	background-color: #fff;
+}
+.byt_intro_message {
+	animation: colorchanges 100s;
+  -webkit-animation: colorchanges 100s; /* Chrome and Safari */
+  margin-top: 77px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  text-align: left;
+}
+.byt_intro_message_1 {
+  animation: colorchanges 100s;
+  -webkit-animation: colorchanges 100s; /* Chrome and Safari */
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.glyphicon{
+  animation: colorchanges 100s;
+  -webkit-animation: colorchanges 100s; /* Chrome and Safari */
+  margin-top: 6px;
+  margin-left:28px;
+  font-size:20px;
+  color: #419df4;
+}
+.byt_progress{
+  margin-bottom: 0px;
+}
+span{
+  margin:0px;
+  word-wrap:break-word;
+}
+
+.byt_menu_stocks {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.byt_menu_edu_text {
+  animation: colorchange 100s;
+  -webkit-animation: colorchange 100s; /* Chrome and Safari */
+  color: #419df4;
+  font-family: 'Raleway',sans-serif; 
+  font-size: 62px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+.byt_background {
+  animation-delay: 10s;
+  animation: colorchange 100s; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 100s; /* Chrome and Safari */
+  background-color: #419df4;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: #419df4;
+  padding-top: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@keyframes colorchange
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1aaab2;}
+  30%  {background: #ff0202;}
+  40%  {background: #f47e00;}
+  50%  {background: #37acd3;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #f46542;}
+  10%  {background: #b642f4;}
+  20%  {background: #1aaab2;}
+  30%  {background: #ff0202;}
+  40%  {background: #f47e00;}
+  50%  {background: #37acd3;}
+  60%  {background: #4164f4;}
+  70%  {background: #8841f4;}
+  80%  {background: #e541f4;}
+  90%  {background: #f441a3;}
+  100% {background: #419df4;}
+}
+@keyframes bytcolorchange
+{
+  0%   {color: #f46542;}
+  10%  {color: #b642f4;}
+  20%  {color: #1aaab2;}
+  30%  {color: #ff0202;}
+  40%  {color: #f47e00;}
+  50%  {color: #37acd3;}
+  60%  {color: #4164f4;}
+  70%  {color: #8841f4;}
+  80%  {color: #e541f4;}
+  90%  {color: #f441a3;}
+  100% {color: #419df4;}
+}
+
+@-webkit-keyframes bytcolorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {color: #f46542;}
+  10%  {color: #b642f4;}
+  20%  {color: #1aaab2;}
+  30%  {color: #ff0202;}
+  40%  {color: #f47e00;}
+  50%  {color: #37acd3;}
+  60%  {color: #4164f4;}
+  70%  {color: #8841f4;}
+  80%  {color: #e541f4;}
+  90%  {color: #f441a3;}
+  100% {color: #419df4;}
+}
+.byt_white_background {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  background-color: #fff;
+}
+.byt_progress{
+  margin-bottom: 0px;
+}
+span{
+  margin:0px;
+  word-wrap:break-word;
+}
+
+.byt_menu_stocks {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.byt_menu_edu_text {
+  animation: bytcolorchange 100s;
+  -webkit-animation: bytcolorchange 100s; /* Chrome and Safari */
+  font-family: 'Raleway',sans-serif; 
+  font-size: 62px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
+.byt_direct_link{
+  margin: 5px;
+}
+.byt_lesson_lock {
+  margin-top: 0px;
+  margin-left: -5px;
+  font-size: 13px;
+  animation: bytcolorchange 100s;
+  -webkit-animation: bytcolorchange 100s; /* Chrome and Safari */
+  margin-right: 4px;
+}

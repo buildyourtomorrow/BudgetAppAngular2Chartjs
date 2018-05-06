@@ -1,0 +1,75 @@
+.monthly_projections_nav {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-right: 1px;
+	padding-bottom: 20px;	
+	padding-left: 1px;
+	border-radius: 5px;
+}
+.monthly_projections_nav ul {
+	text-align: center;
+	padding-left: 1px;
+}
+.monthly_projections_nav ul li{
+	display: inline;	
+	font-size: 14px;	
+}
+
+.monthly_projections_nav_first {
+	margin-left: 10px;
+	margin-right: 16px;	
+}
+.monthly_projections_nav_second {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.monthly_projections_nav_third {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.monthly_projections_nav_forth {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.glyphicon{
+  margin-top:0px;
+  margin-left:8px;
+  font-size:18px;
+  color: #419df4;
+}
+.btn-default {
+    color: #419df4;
+}
+#byt-right-arrow{
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#byt-left-arrow{
+	margin-left: 10px;
+	margin-top: 10px;	
+}
+@media screen and (max-width: 550px) {
+ 	.monthly_projections_nav_first {
+ 		margin-left: 3px !important;
+ 		margin-right: 9px !important;
+ 		font-size: 12px !important;
+ 	}
+ 	.monthly_projections_nav_second {
+ 		margin-left: 9px !important;
+ 		margin-right: 9px !important;
+ 		font-size: 12px !important;
+ 	}
+ 	.monthly_projections_nav_third {
+ 		margin-left: 9px !important;
+ 		margin-right: 9px !important;
+ 		font-size: 12px !important;
+ 	}
+ 	.monthly_projections_nav_forth {
+		margin-left: 9px !important;
+ 		margin-right: 9px !important;
+ 		font-size: 12px !important;
+	}
+ }

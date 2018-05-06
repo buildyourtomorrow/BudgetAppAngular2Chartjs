@@ -1,0 +1,29 @@
+<section class="row">
+	<section class="dashboard_nav">
+		<i id="byt-left-arrow" routerLink="../budget-explainer-text-1" class="animated infinite jello glyphicon glyphicon-arrow-left"></i>
+		<i id="byt-right-arrow" routerLink="../byt-budget-11" class="pull-right animated infinite jello glyphicon glyphicon-arrow-right"></i>
+		<ul>
+			<li role="presentation" class="dashboard_nav_second" (click)="addRemoveIncomeSpinner()">
+				<a routerLink="income" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_income_spinner" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_income_spinner"></i></span>
+					Income
+				</a>									
+			</li>
+			<li role="presentation" class="dashboard_nav_third" (click)="addRemoveBillsSpinner()">
+				<a routerLink="bills" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_bills_spinner" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_bills_spinner"></i></span>
+					Bills
+				</a>									
+			</li>
+			<li role="presentation" class="dashboard_nav_fourth" (click)="addRemoveExpensesSpinner()">
+				<a routerLink="expenses" routerLinkActive="btn btn-default btn-xs">
+					<span ><i *ngIf="byt_expenses_spinner" class="fa fa-refresh fa-spin"></i></span>
+					<span ><i *ngIf="!byt_expenses_spinner"></i></span>
+					Expenses
+				</a>									
+			</li>
+		</ul>	
+	</section>
+</section>

@@ -1,0 +1,37 @@
+<byt-nav></byt-nav>
+<br>
+<section class="container">
+	<section class="col-md-6 col-md-offset-3">
+		<div class="progress byt_progress">
+			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="56.25" aria-valuemin="0" aria-valuemax="100" style="width: 56.25%"> 
+			</div>
+		</div>
+		<br>
+	</section>	
+	<section class="col-md-6 col-md-offset-3 byt_background">
+		<section class="row byt_intro">
+			<a id="byt-left-arrow" routerLink="../budget-intro-text-0" class="glyphicon glyphicon-arrow-left"></a>
+			<a id="byt-right-arrow" routerLink="../budget-intro-text-2" class="pull-right glyphicon glyphicon-arrow-right"></a>
+			<section class="byt_intro_message">
+				Our budgeting system is different from the rest. We don't use envelopes or make you cut up credit cards. Our system helps by making you focus on small short-term goals. Why? Because the better we become at setting and hitting small financial goals, the faster your belief and confidence will grow. And it is that belief and confidence that will get you to where you want to go.
+			</section>
+			<section class="byt_intro_message1">
+				So let us start. The first step is selecting a period of time for which you'd like to budget. We suggest choosing a budget period between one and four weeks. Remember, think baby steps!
+			</section>	
+			<br>
+			<section class="form-group">
+				<section class="byt_date_range_text">Select START and END dates</section>
+	            <section class="input-group" daterangepicker (selected)="selectedDate($event)"
+	            (applyDaterangepicker)="submitDateRange()"
+	            >
+	                <input [value]="daterange.range" class="form-control" >
+	                <span class="input-group-btn">
+	                    <a type="button" class="btn btn-default"><i class="glyphicon glyphicon-calendar"></i></a>
+	                </span>
+	            </section>
+	        </section>
+			<button (click)="submitDateRange()" routerLink="../budget-intro-text-2" class="btn btn-default btn-lg byt_intro_message_button pull-right">Date range selected</button>
+		</section>
+		<br>
+	</section>
+</section>
